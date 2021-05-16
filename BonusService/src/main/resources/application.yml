@@ -1,0 +1,7 @@
+spring:
+    application:
+        name: bonus-service
+server:
+    port: ${PORT:8092}
+web3j:
+    client-address: http://127.0.0.1:7545
