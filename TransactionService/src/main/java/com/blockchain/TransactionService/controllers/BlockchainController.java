@@ -20,7 +20,7 @@ public class BlockchainController {
     BlockchainService service;
 
     //$ curl --header "Content-Type: application/json" --request POST --data '{"fromId":2,"toId":1,"value":3}' http://localhost:8090/transaction
-    @PostMapping("/transaction")
+    @PostMapping("test/transaction")
     public BlockchainTransaction execute(@RequestBody BlockchainTransaction transaction) throws NoSuchAlgorithmException, NoSuchProviderException, InvalidAlgorithmParameterException, CipherException, IOException {
         return service.process(transaction);
     }

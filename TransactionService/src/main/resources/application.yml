@@ -5,3 +5,5 @@ server:
     port: ${PORT:8090}
 web3j:
     client-address: http://127.0.0.1:7545
+contract-service:
+    url: http://localhost:8091/contract/owner
